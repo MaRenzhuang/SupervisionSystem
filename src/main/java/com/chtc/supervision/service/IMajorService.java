@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface IMajorService {
 
-    Set<MajorDic> findAllMajor();
+    public Set<MajorDic> findAllMajor();
 
-    void insertMajor();
+    public void insertMajor();
 }
