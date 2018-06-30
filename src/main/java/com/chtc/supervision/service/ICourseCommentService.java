@@ -12,24 +12,24 @@ import java.util.Map;
 
 public interface ICourseCommentService {
 
-    Json createCourseComment(String id,HttpServletRequest request);
+    public Json createCourseComment(String id,HttpServletRequest request);
 
-    CourseComment getCourseComment(String id);
+    public CourseComment getCourseComment(String id);
 
-    void saveCourseComment(CourseComment courseComment);
+    public void saveCourseComment(CourseComment courseComment);
 
-    void submitComment(String id);
+    public void submitComment(String id);
 
-    Json updateCheckedState(String[] arr, int state);
+    public Json updateCheckedState(String[] arr, int state);
 
-    String deleteCourseComment(String[] ids);
+    public String deleteCourseComment(String[] ids);
 
-    Map<String, String> findCourseCommentByID(String id);
+    public Map<String, String> findCourseCommentByID(String id);
 
-    DataTableReturnObject findAllCourseCommentsById(DataRequest dr, String id);
+    public DataTableReturnObject findAllCourseCommentsById(DataRequest dr, String id);
 
-    DataTableReturnObject getCourseCommentPage(DataRequest dr, String searchRecordInfo, int state);
+    public DataTableReturnObject getCourseCommentPage(DataRequest dr, String searchRecordInfo, int state);
 
-    List<CourseComment> findByTime(Date startTime, Date endTime,String createBy);
+    public List<CourseComment> findByTime(Date startTime, Date endTime,String createBy);
 
 }
