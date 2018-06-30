@@ -22,20 +22,20 @@ public interface IUserService {
 
     public void deleteUser(String[] ids);
 
-    User getUser();
-    //======================新增（胡钢）==================
-    List<JSONObject> findUserByDepartmentId(String id);
-    //======================新增（宣洪剑）==================
-    User findByUserCode(String supervisionCode);
+    public User getUser();
+    
+    public List<JSONObject> findUserByDepartmentId(String id);
+    
+    public User findByUserCode(String supervisionCode);
 
-    DataTableReturnObject getSupervisionPageMode(DataRequest dr, String keyName, String userCode, String departmentName);
+    public DataTableReturnObject getSupervisionPageMode(DataRequest dr, String keyName, String userCode, String departmentName);
 
 
-    User findUserByMobilePhone(String tel, String id);
+    public User findUserByMobilePhone(String tel, String id);
 
-    User findUserByUserCode(String userCode, String id);
+    public User findUserByUserCode(String userCode, String id);
 
-    Json updatePassword(String userName, String newPassWord, String oldPassWord);
+    public Json updatePassword(String userName, String newPassWord, String oldPassWord);
 
-    String addUserByFile(MultipartFile excel_file);
+    public String addUserByFile(MultipartFile excel_file);
 }
