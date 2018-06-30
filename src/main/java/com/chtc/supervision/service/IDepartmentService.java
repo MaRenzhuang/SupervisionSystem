@@ -6,5 +6,5 @@ import org.json.JSONObject;
 import java.util.List;
 
 public interface IDepartmentService {
-     List<Department> findAllDepartment();
+    public List<Department> findAllDepartment();
 }
