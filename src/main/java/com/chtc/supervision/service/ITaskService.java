@@ -10,15 +10,15 @@ import java.util.List;
 
 public interface ITaskService {
 
-    DataTableReturnObject getTaskByUserId(String userId, DataRequest dataRequest);
+    public DataTableReturnObject getTaskByUserId(String userId, DataRequest dataRequest);
 
-    Task save(Task task);
+    public Task save(Task task);
 
-    List<Task> findBySemesterId(String id);
+    public List<Task> findBySemesterId(String id);
 
-    void delete(String id);
+    public void delete(String id);
 
-    Task findTaskByUserId(String id);
+    public Task findTaskByUserId(String id);
 
-    void updateTaskFinishTimes(String userId);
+    public void updateTaskFinishTimes(String userId);
 }
