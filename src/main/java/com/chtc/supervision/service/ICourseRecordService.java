@@ -9,17 +9,17 @@ import java.util.List;
 
 public interface ICourseRecordService {
 
-    void createCourseRecord(String id);
+    public void createCourseRecord(String id);
 
-    DataTableReturnObject getCourseRecordPageMode(DataRequest dr, String keyName, String code, String department);
+    public DataTableReturnObject getCourseRecordPageMode(DataRequest dr, String keyName, String code, String department);
 
-    List<CourseRecord> findAll(String department, String start, String end, String seNumber );
+    public List<CourseRecord> findAll(String department, String start, String end, String seNumber );
 
-    List<CourseRecord> findAll();
+    public List<CourseRecord> findAll();
 
-    String findDepartmentNameById(String id);
+    public String findDepartmentNameById(String id);
 
-    List<CourseRecord> findByTeacherName(String teacherName);
+    public List<CourseRecord> findByTeacherName(String teacherName);
 
-    DataTableReturnObject findAllCourseRecordsById(DataRequest dr, String searchCode, String searchName, String searchMajor);
+    public DataTableReturnObject findAllCourseRecordsById(DataRequest dr, String searchCode, String searchName, String searchMajor);
 }
