@@ -8,19 +8,19 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface ICourseService {
 
-    String addCourseManual(CourseDTO course);
+    public String addCourseManual(CourseDTO course);
 
-    String queryCourseByCode(String code);
+    public String queryCourseByCode(String code);
 
-    String addCourseByFile(MultipartFile excel_file);
+    public String addCourseByFile(MultipartFile excel_file);
 
-    DataTableReturnObject getCoursePageMode(DataRequest dr, CourseQueryUtil courseQuery);
+    public DataTableReturnObject getCoursePageMode(DataRequest dr, CourseQueryUtil courseQuery);
 
-    CourseDTO queryCourseById(String id);
+    public CourseDTO queryCourseById(String id);
 
-    String updateCourse(CourseDTO course);
+    public String updateCourse(CourseDTO course);
 
-    String deleteCourse(String[] ids);
+    public String deleteCourse(String[] ids);
 
-    DataTableReturnObject getCourseToMobile(DataRequest dr, String searchCourseInfo);
+    public DataTableReturnObject getCourseToMobile(DataRequest dr, String searchCourseInfo);
 }
