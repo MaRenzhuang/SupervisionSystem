@@ -6,9 +6,9 @@ import java.util.Set;
 
 public interface ISemesterService {
 
-    Set<String> findAllSemester();
+    public Set<String> findAllSemester();
 
-    Semester findSemster(String startYear, String endYear, int i);
+    public Semester findSemster(String startYear, String endYear, int i);
 
-    Semester save(Semester semster);
+    public Semester save(Semester semster);
 }
